@@ -87,11 +87,11 @@
      /* General Styles */
 
      html {
-        font-size: 16px;
+        font-size: 18px;
      }
 
      body {
-        font-family: 'Kanit' sans-serif;
+        font-family: 'Kanit', sans-serif;
         font-size: 1em;
         text-align: center;
         color: #aacfd0;
@@ -112,7 +112,6 @@
      h1 {
         font-size: 2em;
         font-weight: 700;
-        padding: 30px 0;
         color: #aacfd0;
         line-height: 1.5;
      }
@@ -296,12 +295,10 @@
      }
 
      header nav ul li {
-        font-size: .8em;
+        font-size: .75em;
         margin-bottom: 20px;
-     }
-
-     .title {
-        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
      }
 
      nav #contact-link {
@@ -333,10 +330,6 @@
         justify-content: center;
         align-items: flex-start;
         flex-flow: row wrap;
-     }
-
-     footer .content-wrapper h3 {
-        text-align: center;
      }
 
      footer .contact-info {
@@ -407,16 +400,11 @@
 
      .project h4 {
         font-weight: bold;
-        text-align: center;
      }
 
      .project figure {
         width: 100%;
         filter: drop-shadow(1px 2px 6px lightgrey);
-     }
-
-     .project-header {
-        text-align: center;
      }
 
      .project-link {
@@ -432,7 +420,6 @@
 
      #skills {
         background-color: #222831;
-        text-align: center;
      }
 
      #skills h4 {
@@ -553,8 +540,415 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
+  @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+    /*General Styles */
+    .content-wrapper {
+      max-width: 640px;
+    }
+    /*Text styles*/
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.75em;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+
+    h5 {
+      font-size: 1.8em;
+    }
+
+    header nav ul li {
+      font-size: 1rem;
+    }
+    /*Element styles*/
+    header {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+
+    nav {
+      padding: 0 0 80px 0;
+    }
+
+    #projects {
+      padding-top: 80px;
+    }
+
+    #skills {
+      padding-bottom: 80px;
+    }
+
+    footer {
+      padding: 140px 0;
+    }
+
+    #about {
+      padding: 80px 0;
+    }
+
+    footer {
+      padding-bottom: 80px;
+    }
+
+    h2 {
+      margin-top: 80px;
+    }
+
+    .project-header {
+      margin: 0 0 60px 0;
+    }
+
+    .project-description {
+      margin: 0 0 30px 0;
+    }
+
+    .project-link {
+      margin: 40px 0 60px 0;
+    }
+
+    #skills {
+      padding-top: 80px;
+    }
+
+    .skills-header {
+      margin-bottom: 40px;
+    }
+
+    #skills h4 {
+      margin: 40px 0 20px 0;
+    }
+
+    .about-info h3 {
+      margin: 80px 0;
+    }
+
+    .about-info h4 {
+      margin: 0 0 60px 0;
+    }
+
+    .about-content {
+      margin: 0 0 30px 0;
+    }
+
+    .contact-info {
+      margin: 80px 0;
+    }
+
+    .contact-title {
+      margin: 0 0 30px 0;
+    }
+    /*Header */
+    header .content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-transform: uppercase;
+    }
+
+    header nav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+
+    .title h2 {
+      max-width: 80%;
+    }
+    /* projects */
+    .project-wrapper {
+      justify-content: space-around;
+    }
+
+    .project {
+      width: 45%;
+      align-items: center;
+    }
+
+    .project-description {
+      width: 95%;
+    }
+
+    .language-wrapper,
+    .tech-tool-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      flex-flow: row wrap;
+      text-transform: uppercase;
+    }
+
+    .skills,
+    .tools {
+      width: 45%;
+    }
+
+    .language-wrapper p,
+    .tech-tool-wrapper p {
+      padding: 15px 0;
+    }
+  
+    /* about */
+    .about-content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    }
+  
+    #about figure {
+      width: 60%;
+    }
+  
+    .about-info h4 {
+      text-align: left;
+    }
+    /*Footer styles */
+    .contact-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    footer .contact-info {
+      width: 33%;
+    }
+  
+    footer ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+    }
+  
+    footer .contact-icons {
+      width: 12.5em;
+      justify-content: space-between;
+    }
+  
+    footer .contact-icons li i {
+      font-size: 2rem;
+    }
+  
+    footer .copyright {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width:1024px) {
+
+   /* added for landscape tablets and iPad Pro */
+   .content-wrapper {
+     max-width: 900px;
+   }
+ 
+   .about-info h3 {
+     font-size: 3.5rem;
+   }
+ }
+
+  @media only screen and (min-width: 1200px) {
+   .content-wrapper {
+      max-width: 1450px;
+    }
+  
+    /* font styles */
+    h1 {
+      font-size: 4rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h3 {
+      font-size: 2.5rem;
+    }
+  
+    h4 {
+      font-size: 1.25rem;
+    }
+  
+    h5 {
+      font-size: 1.5rem;
+    }
+  
+    .about-info h3 {
+      font-size: 3.75rem;
+      text-align: left;
+    }
+  
+    .about-info h4 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.25rem;
+    }
+  
+    .project-link,
+    .language-wrapper p,
+    .tech-tool-wrapper p {
+      font-size: 1rem;
+    }
+  
+    /* element margins */
+    /* the list element have 20px of bottom margin already */
+    header {
+      padding-top: 80px;
+      padding-bottom: 140px;
+    }
+  
+    nav {
+      margin-bottom: 80px;
+    }
+  
+    #projects {
+      padding-top: 80px;
+    }
+  
+    #skills {
+      padding-bottom: 120px;
+    }
+  
+    #about {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  
+    footer {
+      padding: 140px 0 140px 0;
+    }
+  
+    h2 {
+      margin: 40px 0 0 0;
+    }
+  
+    .project-header {
+      margin: 0 0 60px 0;
+    }
+  
+    .project-description {
+      margin: 0 0 30px 0;
+    }
+  
+    .project-link {
+      margin: 40px 0 80px 0;
+    }
+  
+    #skills {
+      padding-top: 120px;
+    }
+  
+    #skills .content-wrapper {
+      max-width: 900px;
+    }
+  
+    .skills-header {
+      margin-bottom: 40px;
+    }
+  
+    .about-info h3 {
+      margin: 0;
+    }
+  
+    .about-info h4 {
+      margin: 40px 0;
+    }
+  
+    .about-text {
+      margin: 0 0 30px 0;
+    }
+  
+    .contact-info {
+      margin: 80px 0 80px 0;
+    }
+  
+    .contact-title {
+      margin: 0 0 30px 0;
+    }
+  
+    /* header */
+    header .content-wrapper {
+      justify-content: flex-end;
+    }
+  
+    nav ul li a {
+      padding: 10px 10px;
+    }
+  
+    nav ul li a:hover,
+    nav #contact-link:hover {
+      background-color: #f4f7f7;
+      color: #222831;
+      padding: 10px 10px;
+      border-radius: 30px;
+    }
+  
+    .title {
+      max-width: 95%;
+    }
+  
+    .title h2 {
+      max-width: 70%;
+    }
+  
+    /* portfolio */
+    .project {
+      width: 30%;
+    }
+  
+    /* skills */
+    .skills,
+    .tools {
+      width: 30%;
+    }
+  
+    /* about */
+    .about-content-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #about figure {
+      width: 35%;
+      margin-top: 0;
+    }
+  
+    .about-info {
+      width: 58%;
+    }
+  
+    /* contact */
+    footer .content-wrapper {
+      max-width: 70%;
+    }
+  
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
+    }
   }
   
   @media print,
