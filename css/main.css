@@ -1,0 +1,634 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+
+     /* General Styles */
+
+     html {
+        font-size: 16px;
+     }
+
+     body {
+        font-family: 'Kanit' sans-serif;
+        font-size: 1em;
+        text-align: center;
+        color: #aacfd0;
+     }
+
+     ul,
+     ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+     }
+
+     a {
+        color: #aacfd0;
+        text-decoration: none;
+     }
+
+     h1 {
+        font-size: 2em;
+        font-weight: 700;
+        padding: 30px 0;
+        color: #aacfd0;
+        line-height: 1.5;
+     }
+
+     h2 {
+        font-size: 1.5em;
+        font-weight: 400;
+        color: #aacfd0;
+        line-height: 1.5;
+        width: 100%;
+     }
+
+     h3 {
+        font-size: 1.75em;
+     }
+
+     h4 {
+        font-size: 1.35em;
+     }
+
+     h5 {
+        font-size: 1.5em;
+     }
+
+     .project-link,
+     .language-wrapper p,
+     .tech-tool-wrapper p {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #222831;
+     }
+
+     .about-info h4,
+     .contact-title {
+        font-weight: 400;
+     }
+
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6 {
+        margin: 0;
+     }
+
+     h3,
+     h4, 
+     h5 {
+        width: 100%;
+        line-height: 1.5;
+     }
+
+     p,
+     li {
+        font-size: 1.2em;
+        line-height: 1.5;
+     }
+
+     img {
+        width: 100%;
+     }
+
+     span {
+        font-weight: bold;
+     }
+
+     div {
+        display: block;
+     }
+     
+     figure {
+        margin: 0;
+     }
+
+     address {
+        font-style: normal;
+     }
+    
+     /* structure style */
+     .content-wrapper {
+        width: 90%;
+     }
+
+     header,
+     #projects,
+     #skills,
+     #about,
+     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     #projects p,
+     #about p {
+        width: 100%;
+        text-align: left;
+     }
+
+     p {
+        margin: 0;
+     }
+
+     nav {
+        margin-top: 60px;
+     }
+
+     #projects {
+        padding-top: 60px;
+     }
+
+     #skills {
+        padding-top: 60px;
+     }
+
+     #about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+     }
+
+     footer {
+        padding: 80px 0;
+     }
+
+     h2 {
+        margin-top: 60px;
+     }
+
+     h3 {
+        margin-top: 20px;
+     }
+
+     h4 {
+        margin: 0 0 40px 0;
+     }
+
+     .project-description {
+        margin: 0 0 30px 0;
+     }
+
+     .project-link {
+        margin: 40px 0;
+     }
+
+     #skills {
+        padding-top: 60px;
+     }
+
+     figure {
+        margin: 20px 0 40px 0;
+     }
+
+     .skills-header {
+        margin-bottom: 20px;
+     }
+
+     .about-info h3 {
+        margin: 40px 0 40px 0;
+     }
+
+     .about-content {
+        margin-bottom: 60px;
+     }
+
+     #contact h3{
+        margin-bottom: 60px;
+     }
+
+     .contact-info {
+        margin: 0 0 60px 0;
+     }
+
+     .contact-title {
+        margin: 0 0 40px 0;
+     }
+     /*----------------Base header - Footer styles--------------*/
+
+     header {
+        background-color: #222831;
+     }
+
+     header nav ul li {
+        font-size: .8em;
+        margin-bottom: 20px;
+     }
+
+     .title {
+        text-align: center;
+     }
+
+     nav #contact-link {
+        background: #a3f7bf;
+        padding: 10px 10px;
+        border-radius: 25px;
+        color: #222831;
+     }
+
+     nav ul {
+        display: flex;
+        justify-content: space-between;
+     }
+
+     header h1 {
+        width: 100%;
+     }
+
+     header h2 {
+        width: 100%;
+     }
+
+     footer {
+        background-color: #222831;
+     }
+
+     footer .contact-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+     }
+
+     footer .content-wrapper h3 {
+        text-align: center;
+     }
+
+     footer .contact-info {
+        width: 60%;
+     }
+
+     footer h4 {
+        width: 100%;
+     }
+
+     footer .follow-section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+     }
+
+     footer .contact-icons {
+        display: flex;
+        justify-content: space-around;
+     }
+
+     footer ul {
+        width: 100%;
+     }
+
+     footer .contact-icons li {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     footer .contact-icons li i {
+        font-size: 1.8em;
+        color: #aacfd0;
+     }
+     /* Mobile styles */
+
+     #projects,
+     #skills {
+        width: 100%;
+     }
+
+     #projects {
+        color: #aacfd0;
+        background-color: #393e46;
+     }
+
+     #projects h3 {
+        width: 100%;
+     }
+
+     .project-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+     }
+
+     .project {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .project h4 {
+        font-weight: bold;
+        text-align: center;
+     }
+
+     .project figure {
+        width: 100%;
+        filter: drop-shadow(1px 2px 6px lightgrey);
+     }
+
+     .project-header {
+        text-align: center;
+     }
+
+     .project-link {
+        background-color: #a3f7bf;
+        padding: .75rem 3.75rem;
+        border-radius: 25px;
+     }
+
+     .project-link:hover {
+        background-color: #f4f7f7;
+        color: #222831;
+     }
+
+     #skills {
+        background-color: #222831;
+        text-align: center;
+     }
+
+     #skills h4 {
+        margin: 40px 0 40px 0;
+        font-weight: bold;
+     }
+
+     .language-wrapper p,
+     .tech-tool-wrapper p {
+        background-color: #a3f7bf;
+        padding: 15px 0;
+        margin: 20px 0;
+     }
+
+     .tools {
+        width: 100%;
+     }
+
+     #about {
+        width: 100%;
+        background-color: #393e46;
+     }
+
+     #profile-pic {
+        width: 90%;
+     }
+
+     #about h3,
+     #about h4,
+     #about p {
+        color: #aacfd0;
+     }
+
+
+
+
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+  
+  /*
+   * Hide only visually, but have it available for screen readers:
+   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+   *
+   * 1. For long content, line feeds are not interpreted as spaces and small width
+   *    causes content to wrap 1 word per line:
+   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+   */
+  
+  .visually-hidden {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+   * Extends the .visually-hidden class to allow the element
+   * to be focusable when navigated to via the keyboard:
+   * https://www.drupal.org/node/897638
+   */
+  
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+   * Hide visually and from screen readers, but maintain layout
+   */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+   * Clearfix: contain floats
+   *
+   * The use of `table` rather than `block` is only necessary if using
+   * `::before` to contain the top-margins of child elements.
+   */
+  
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+  }
+  
+  .clearfix::after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+  
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+  
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+  
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+  
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+  
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+  
+    pre {
+      white-space: pre-wrap !important;
+    }
+  
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+  
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+  
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+  
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
+  
+  
