@@ -88,6 +88,7 @@
 
      html {
         font-size: 18px;
+        scroll-behavior: smooth;
      }
 
      body {
@@ -107,6 +108,7 @@
      a {
         color: #aacfd0;
         text-decoration: none;
+        display: block;
      }
 
      h1 {
@@ -367,6 +369,13 @@
         font-size: 1.8em;
         color: #aacfd0;
      }
+
+     .contact-title a {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      flex-direction: column;
+     }
      /* Mobile styles */
 
      #projects,
@@ -406,6 +415,9 @@
         width: 100%;
         filter: drop-shadow(1px 2px 6px lightgrey);
      }
+
+
+
 
      .project-link {
         background-color: #a3f7bf;
@@ -691,6 +703,10 @@
       width: 95%;
     }
 
+    .project figure a img {
+      height: 240px;
+     }
+
     .language-wrapper,
     .tech-tool-wrapper {
       display: flex;
@@ -766,7 +782,7 @@
    .about-info h3 {
      font-size: 3.5rem;
    }
- }
+  }
 
   @media only screen and (min-width: 1200px) {
    .content-wrapper {
